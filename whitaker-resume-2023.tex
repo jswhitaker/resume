@@ -1,0 +1,64 @@
+\documentclass[letter, sans]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+\recomputelengths{}
+
+% personal data
+\firstname{John}
+\familyname{Whitaker}
+\title{Software Engineer}
+\address{2010D NW 60th St}{Seattle, WA 98107}
+\mobile{(770) 833--3134}
+\email{jake.whitaker@gmail.com}
+
+\begin{document}
+\maketitle
+
+\section{Experience}
+
+\cventry{2017--2023}{Software Engineer II}{Google}{Google Cloud Storage Metering}{Seattle}{
+\begin{itemize}
+  \item Rewrote Java batch processing pipeline into C++ producing identical output while reducing RAM utilization by 90 percent.
+  \item Lead the development of the metering implementation for the new dual region offering.
+  \item Wrote a new metric implementation for a new custom contract being offered to one of our top 5 customers.
+  \item Lead a year long effort restructuring the user and group structure for the entire organization.
+  \item Provided oncall support to customer support engineers and account managers.
+\end{itemize}
+}
+\cventry{2016--2017}{Software Engineer II}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
+\begin{itemize}
+  \item Member of company-wide community project to improve Elasticsearch usage and deployment within the company.
+  \item Developed long term scaling and maintenance plan to support our search cluster.
+  \item Developed a  big data computation migration plan from a self hosted cluster to EMR to reduce developer and operational pain.
+  \item Provided new features requested by users and released them in a rapid manner.
+  \end{itemize}
+}
+\cventry{2014--2016}{Software Engineer I}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
+  \begin{itemize}
+  \item Collected requirements for new internal application
+  \item Developed the data storage layer and data transformation flows.  This utilizes DynamoDB for storage and SQS for the message queue.
+  \item Moved the team to agile development and continue to lead team scrum.
+  \item Designed and implemented a search cluster using Elasticsearch to support our UI requirements. 
+  \item Released application to high user praise.
+  \end{itemize}
+}
+\section{Languages}
+\cvitem{C++}{Highly Proficient}{}
+\cvitem{Python}{Highly Proficient}{}
+\cvitem{Java}{Proficient}{}
+
+\section{Developer Skills}
+\cvlistitem{Distributed Systems}
+\cvlistitem{DevOps}
+\cvlistitem{Testing}
+\cvlistitem{System design}
+
+\section{Education}
+\cventry{2014}{Bachelor of Arts, Computer Science with a Physics Minor}{University of Chicago}{Chicago, IL}{}{}
+\end{document}
