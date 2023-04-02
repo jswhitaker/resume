@@ -1,12 +1,12 @@
-\documentclass[letter, sans]{moderncv}
+\documentclass[letter, 11pt]{moderncv}
 
 % moderncv themes
-\moderncvtheme[blue]{classic}
+\moderncvtheme[blue, sans]{classic}
 
 % character encoding
 \usepackage[utf8]{inputenc}
 % adjust the page margins
-\usepackage[scale=0.9]{geometry}
+\usepackage[scale=0.85]{geometry}
 \recomputelengths{}
 
 % personal data
@@ -22,31 +22,29 @@
 
 \section{Experience}
 
-\cventry{2017--2023}{Software Engineer II}{Google}{Google Cloud Storage Metering}{Seattle}{
-\begin{itemize}
-  \item Rewrote Java batch processing pipeline into C++ producing identical output while reducing RAM utilization by 90 percent.
-  \item Lead the development of the metering implementation for the new dual region offering.
-  \item Wrote a new metric implementation for a new custom contract being offered to one of our top 5 customers.
-  \item Lead a year long effort restructuring the user and group structure for the entire organization.
-  \item Provided oncall support to customer support engineers and account managers.
-\end{itemize}
-}
-\cventry{2016--2017}{Software Engineer II}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
-\begin{itemize}
-  \item Member of company-wide community project to improve Elasticsearch usage and deployment within the company.
-  \item Developed long term scaling and maintenance plan to support our search cluster.
-  \item Developed a  big data computation migration plan from a self hosted cluster to EMR to reduce developer and operational pain.
-  \item Provided new features requested by users and released them in a rapid manner.
-  \end{itemize}
-}
-\cventry{2014--2016}{Software Engineer I}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
+\cventry{2017 -- 2023}{Software Engineer II}{Google}{Google Cloud Storage Metering}{Seattle}{
   \begin{itemize}
-  \item Collected requirements for new internal application
-  \item Developed the data storage layer and data transformation flows.  This utilizes DynamoDB for storage and SQS for the message queue.
-  \item Moved the team to agile development and continue to lead team scrum.
-  \item Designed and implemented a search cluster using Elasticsearch to support our UI requirements. 
-  \item Released application to high user praise.
-  \end{itemize}
+		\item Rewrote storage usage metering job that calculates usage across all GCS customers from Java to C++, saving 90 percent in memory resource utilization.
+		\item Led the development with a junior engineer for metering of dual region objects, a highly requested feature by current and potential customers. This required the changing of the core assumption that each bucket exists in a single region.
+		\item Wrote a new metric implementation for a new custom contract being offered to one of our top 5 customers.
+		\item Led a year long effort security improvement project to restructure and harden access controls for all of Cloud Storage.
+		\item Helped eight new software engineers at a remote office onboard onto the team at once.
+	\end{itemize}
+}
+\cventry{2016 -- 2017}{Software Engineer II}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
+	\begin{itemize}
+  \item Developed a migration plan to move a data processing system from a self hosted cluster to EMR to reduce developer and operational pain.
+  \item Core contributor to an Amazon community project to simplify Elasticsearch usage and deployment within the company.
+  \item Developed a long-term scaling and maintenance plan to support the Elasticsearch cluster.
+	\end{itemize}
+}
+\cventry{2014 -- 2016}{Software Engineer I}{Amazon}{Amazon Selection and Catalog Services}{Seattle}{
+	\begin{itemize}
+  \item Collected requirements for a new internal data visualization application ensuring we met our users actual needs.
+	\item Developed a document replication system that read from a bulk data output and wrote into Elasticsearch.
+	\item Introduced the team to the Agile process and acted as team scrum master. 
+	\item Developed an Elasticsearch storage schema model and service API to enable users to search and aggregate large amounts of data in realtime.
+	\end{itemize}
 }
 \section{Languages}
 \cvitem{C++}{Highly Proficient}{}
@@ -60,5 +58,5 @@
 \cvlistitem{System design}
 
 \section{Education}
-\cventry{2014}{Bachelor of Arts, Computer Science with a Physics Minor}{University of Chicago}{Chicago, IL}{}{}
+\cventry{2014}{Bachelor of Arts, Computer Science with a Physics Minor}{University of Chicago}{\linebreak Chicago, IL}{}{}
 \end{document}
